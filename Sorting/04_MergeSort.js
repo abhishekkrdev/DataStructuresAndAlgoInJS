@@ -34,10 +34,6 @@ const mergeSort = (arr, left, right) => {
     return [arr[left]];
   }
 
-  if (left > right) {
-    return;
-  }
-
   let mid = Math.floor(left + (right - left) / 2);
   const leftSortedArray = mergeSort(arr, left, mid);
   const rightSortedArray = mergeSort(arr, mid + 1, right);
